@@ -5,6 +5,7 @@
 package filaveiculo;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
+import java.util.Date;
 /**
  *
  * @author flavia
@@ -15,14 +16,14 @@ public class Veiculo{
     String marcaModeloVeiculo;
     int  anoModelo;
     double valorVenda;
-    //Date dataPublicacao; // valor default é a data corrente de inserção   
+    Date dataPublicacao; // valor default é a data corrente de inserção   
 
-    public Veiculo(String nomeCliente, String marcaModeloVeiculo, int anoModelo, double valorVenda) {
+    public Veiculo(String nomeCliente, String marcaModeloVeiculo, int anoModelo, double valorVenda,Date dataPublicacao) {
         this.nomeCliente = nomeCliente;
         this.marcaModeloVeiculo = marcaModeloVeiculo;
         this.anoModelo = anoModelo;
         this.valorVenda = valorVenda;
-        //this.dataPublicacao = dataPublicacao;
+        this.dataPublicacao = dataPublicacao;
     }
     
     
@@ -42,9 +43,9 @@ public class Veiculo{
         return valorVenda;
     }
 
-    //public Date getDataPublicacao() {
-    //    return dataPublicacao;
-    //}
+    public Date getDataPublicacao() {
+        return dataPublicacao;
+    }
 
     public void setNomeCliente(String nomeCliente) {
         this.nomeCliente = nomeCliente;
@@ -62,9 +63,9 @@ public class Veiculo{
         this.valorVenda = valorVenda;
     }
 
-    //public void setDataPublicacao(Date dataPublicacao) {
-    //    this.dataPublicacao = dataPublicacao;
-    //}
+    public void setDataPublicacao(Date dataPublicacao) {
+       this.dataPublicacao = dataPublicacao;
+    }
      
 }
 
