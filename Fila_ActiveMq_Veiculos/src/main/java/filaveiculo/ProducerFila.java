@@ -6,6 +6,10 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 
 
@@ -13,7 +17,7 @@ public class ProducerFila {
     private static String url = ActiveMQConnection.DEFAULT_BROKER_URL; // "vm://localhost";
     private static String subject = "VEICULO"; //Nome da fila da mensagem
     
-    private static void envia(String nome, String marca, int ano, double valor) throws JMSException {
+    private static void envia(String nome, String marca, int ano, double valor, Date datahj) throws JMSException {
         // Obtem uma conexão com o servidor JMS
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
         Connection connection = connectionFactory.createConnection();
@@ -35,7 +39,7 @@ public class ProducerFila {
 
         // cria um objeto de mensagem "Pessoa"
         //Pessoa mp = new Pessoa("João", 100.0D); 
-        Veiculo mp = new Veiculo(nome, marca, ano, valor);
+        Veiculo mp = new Veiculo(nome, marca, ano, valor, datahj);
         // Producer side:
         TextMessage message = session.createTextMessage(xstream.toXML(mp));
         //message = session.createTextMessage(xstream.toXML(mp));
@@ -63,8 +67,10 @@ public class ProducerFila {
             System.out.println("Digite o Valor do Veiculo: ");
             double valor = scan.nextDouble();
             scan.nextLine();
+            Calendar calendar = Calendar.getInstance();
+            Date datahj = calendar.getTime();
             
-            envia(nome, marca, ano, valor);
+            envia(nome, marca, ano, valor,datahj);
             
             System.out.println("\n Você deseja continuar (sim ou não)?");
             String resposta = scan.nextLine().toLowerCase();
