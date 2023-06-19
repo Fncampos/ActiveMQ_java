@@ -61,6 +61,7 @@ public class ConsumerFila {
         System.out.println("Marca e Modelo: " + par.getMarcaModeloVeiculo());
         System.out.println("Ano Fabricação: " + par.getAnoModelo());
         System.out.println("Valor: " + par.getValorVenda());
+        System.out.println("Data da publicação: " + par.getDataPublicacao());
     	 
     }
     
