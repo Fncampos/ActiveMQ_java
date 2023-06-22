@@ -1,6 +1,6 @@
 Esse README tem o objetivo explicar como rodar e executar esse projeto. 
-
-# Titulo: Classificados de veículo em Java com Spring Boot, usando Filas com o ActiveMQ, integração com DB h2 e criação de API REST para compartilhamento de dados.
+# Tecnologias: Java, ActiveMQ, Spring Boot(JPA, H2, ... )
+# Projeto: Classificados de veículo em Java com Spring Boot, usando Filas com o ActiveMQ, integração com DB h2 e criação de API REST para compartilhamento de dados.
 
 ![Imagem esquema lógico](desenho_esquema.png) 
 
