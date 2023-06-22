@@ -51,7 +51,7 @@ Ex. Mensagem json: {"nomeCliente":"a", "modeloVeiculo":"b", "anoVeiculo":"c", va
 **[Israel Costa](https://github.com/israel1608)** e **[Flávia Campos](https://github.com/Fncampos)**
 
 &nbsp;
-**Este projeto é parte de uma atividade acadêmica do Curso Tecnologia em Análise e Desenvolvimentode Sistemas - 3º semestre - matéria Sistemas distribuidos, ministrada pelo [Profº Cláudio Martins](https://github.com/cmartins-ifpa)**
+**Este projeto é parte de uma atividade acadêmica do Curso Tecnologia em Análise e Desenvolvimentode Sistemas - IFPA - 3º semestre - matéria Sistemas distribuidos, ministrada pelo [Profº Cláudio Martins](https://github.com/cmartins-ifpa)**
 
 
 
