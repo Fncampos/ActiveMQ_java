@@ -9,7 +9,7 @@ O projeto está dividio em 2:
 * apiRestSitemas-main.
 
 ## Funcionamento:
-### Objetivo de Fila_ActiveMq_Veiculos_v3.1 : 
+### Objetivo de Fila_ActiveMq_Veiculos_v3: 
 1. Enviar dados de um veículo via console para uma fila ActiveMQ.
 2. Receber dados através de um consumer 
 3. Guardar informações em uma tabela chamada VEICULO no DB H2.
@@ -20,7 +20,7 @@ O projeto está dividio em 2:
 4. Através uma page WEB e uma solicitação a uma API REST os dados dos veículos cadastrados no Banco podem ser visualizados.
 
 ## Execução:
-### Execução Fila_ActiveMq_Veiculos_v3.1 : 
+### Execução Fila_ActiveMq_Veiculos_v3: 
 1. Para executar corretamente, você precisa ter o Banco H2 e o middleware ActiveMQ já baixados
 Links para download: [ActiveMQ](https://activemq.apache.org/components/classic/download/) e [BD H2](https://www.h2database.com/html/main.html);
 2. Execute o ActiveMQ. As instruções de execução podem ligeiramente variar dependendo do sistema operacional, ver o link [Installation ActiveMQ](https://activemq.apache.org/installation)
