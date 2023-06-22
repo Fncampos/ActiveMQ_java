@@ -17,7 +17,7 @@ O projeto está dividio em 2:
 ### Objetivo de apiRestSitemas-main.: 
 1. Enviar dados de um veículo via Post usando uma API REST.
 2. Os dados são armazenados em uma tabela chamada VEICULO no DB H2.
-4. Através de uma page WEB resgatar os dados armazenados no BD 
+3. Através de uma page WEB resgatar os dados armazenados no BD 
 
 ## Execução:
 ### Execução Fila_ActiveMq_Veiculos_v3: 
@@ -35,9 +35,9 @@ Links para download: [ActiveMQ](https://activemq.apache.org/components/classic/d
 * [BD H2](https://www.h2database.com/html/main.html);
 * [Postman](https://www.postman.com/downloads/) para enviar os dados via post para a API;
 * E instalar uma extenção no navegador chamada [CORS Unblock](), para entender melhor o motivo ver o artigo sobre [Plugin do Chrome: Resolvendo o CORS em desenvolvimento](https://rodolfofadino.com.br/plugin-do-chrome-resolvendo-o-cors-em-desenvolvimento-e0d0a5703019);
-2.Execute o arquivo "AppJpaApplication.java",ele ira colocar os serviços da API REST em funcionamento, receber dados via post e enviar para o BD H2.
+2.Execute o arquivo "AppJpaApplication.java",ele ira colocar os serviços da API REST em funcionamento, receber dados via post e enviar para o BD H2;
 3.Abrir Postman e enviar um POST para o endereço(URL: localhost:8080/veiculos) a seguinte mensagem json
-Exemplo: {"nomeCliente":"string", "marcaModeloVeiculo":"string", "anoModelo":int, "valorVenda":double,"cadastro":"string"}
+Exemplo: {"nomeCliente":"string", "marcaModeloVeiculo":"string", "anoModelo":int, "valorVenda":double,"cadastro":"string"};
 4.Para exibir os dados salvos no BD execute o arquivo veiculos.html, ele irá fazer uma requisição via fetch para a API REST,receberá a resposta em Json e irá imprimir na tela.(OBS: para este passo funcionar corretamente a extensão CORS Unblock já deve estar instalada e ativada no seu navegador)
 
 ### Melhorias Futuras:
