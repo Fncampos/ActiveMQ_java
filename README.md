@@ -25,9 +25,9 @@ O projeto está dividio em 2:
 Links para download: [ActiveMQ](https://activemq.apache.org/components/classic/download/) e [BD H2](https://www.h2database.com/html/main.html);
 2. Execute o ActiveMQ. As instruções de execução podem ligeiramente variar dependendo do sistema operacional, ver o link [Installation ActiveMQ](https://activemq.apache.org/installation)
 3. Abra os projetos Fila_ActiveMq_Veiculos_v3 e apiRestSitemas-main na IDE de sua preferência. Nosso projeto foi feito no [Netbeans](https://netbeans.apache.org/download/index.html);
-4. Agora Execute o "ProducerFila.java" e popule a tabela;
+4. Agora Execute o **"ProducerFila.java"** e popule a tabela;
 5. Gerencie a fila de mensagens via página web, no endereço localhost:8161. Login:Admin e Senha:Admin ; 
-6. Execute o lado Consumer, arquivo "ConsumerFila.java", e verifique o status das mensagens no mesmo endereço do passo anterior;
+6. Execute o lado Consumer, arquivo **"ConsumerFila.java"**, e verifique o status das mensagens no mesmo endereço do passo anterior;
 7. Abra o H2 no navegador, localhost:8082 e verifique os dados gerados na tabela "VEICULO";
 
 ### Execução apiRestSitemas-main:
@@ -35,10 +35,10 @@ Links para download: [ActiveMQ](https://activemq.apache.org/components/classic/d
 * [BD H2](https://www.h2database.com/html/main.html);
 * [Postman](https://www.postman.com/downloads/) para enviar os dados via post para a API;
 * E instalar uma extenção no navegador chamada [CORS Unblock](), para entender melhor o motivo ver o artigo sobre [Plugin do Chrome: Resolvendo o CORS em desenvolvimento](https://rodolfofadino.com.br/plugin-do-chrome-resolvendo-o-cors-em-desenvolvimento-e0d0a5703019);
-2. Execute o arquivo "AppJpaApplication.java",ele ira colocar os serviços da API REST em funcionamento, receber dados via post e enviar para o BD H2;
+2. Execute o arquivo **"AppJpaApplication.java"**,ele ira colocar os serviços da API REST em funcionamento, receber dados via post e enviar para o BD H2;
 3. Abrir Postman e enviar um POST para o endereço(URL: localhost:8080/veiculos), com seguinte estrutura de mensagem json:
 {"nomeCliente":"string", "marcaModeloVeiculo":"string", "anoModelo":int, "valorVenda":double,"cadastro":"string"};
-4. Para exibir os dados salvos no BD execute o arquivo **veiculos.html**. Ele irá fazer uma requisição via [fetch](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch) para a API REST e receberá a resposta em Json, imprimindo na tela.(OBS: para este passo funcionar corretamente a extensão CORS Unblock já deve estar instalada e ativada no seu navegador)
+4. Para exibir os dados salvos no BD execute o arquivo **"veiculos.html"**. Ele irá fazer uma requisição via [fetch](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch) para a API REST e receberá a resposta em Json, imprimindo na tela.(OBS: para este passo funcionar corretamente a extensão CORS Unblock já deve estar instalada e ativada no seu navegador)
 
 ### Melhorias Futuras:
 * Fazer page para entrada e recuparação de dados, com JS e CSS considenrando UX e UI.
