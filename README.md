@@ -1,6 +1,6 @@
 
 # Tecnologias: Java, ActiveMQ, API Rest(spring boot) e Banco H2
-# Projeto: Classificados de veículo em Java com Spring Boot, usando Filas com o ActiveMQ, integração com DB h2 e criação de API REST para compartilhamento de dados.
+# Projeto: Classificados de veículo em Java com Spring Boot, usando Filas com o ActiveMQ, integração com DB H2 e criação de API REST para compartilhamento de dados.
 
 ![Imagem esquema lógico](desenho_esquema.png) 
 
@@ -44,7 +44,7 @@ Ex. Mensagem json: {"nomeCliente":"a", "modeloVeiculo":"b", "anoVeiculo":"c", va
 6. Para visualizar os dados no DB, executar arquivo veiculos.html, no diretorio raiz de "apiRstSistemas-main". E serão recuperados e mostrados os dados presentes no DB, via API rest.
 
 ### Melhorias Futuras:
-* Fazer page para Entrada e recuparação de dados, com JS e CSS considenrando UX e UI.
+* Fazer page para entrada e recuparação de dados, com JS e CSS considenrando UX e UI.
 * Fazer teste com Domínios roteáveis.
 
 ### Sobre os autores
