@@ -40,8 +40,7 @@ OBS:
 **[Israel Costa](https://github.com/israel1608)** e **[Flávia Campos](https://github.com/Fncampos)**
 
 &nbsp;
-
-**Este projeto é parte de uma atividade acadêmica do Curso análise e Desenvolvimentode sistemas - 3º semestre - matéria Sistemas distribuidos, ministrada pelo [Profº Cláudio Martins]()**
+**Este projeto é parte de uma atividade acadêmica do Curso análise e Desenvolvimentode sistemas - 3º semestre - matéria Sistemas distribuidos, ministrada pelo [Profº Cláudio Martins](https://github.com/cmartins-ifpa)**
 
 
 
